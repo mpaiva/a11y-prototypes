@@ -1,1 +1,52 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        #sidebar-menu[aria-hidden="true"] {
+  display: none;
+}
+
+#sidebar-menu[aria-hidden="false"] {
+  display: block;
+  border: 2px solid magenta;
+}
+    </style>
+    <script>
+        var button = document.querySelector('button');
+button.addEventListener('click', function() {
+  var nav = document.getElementById('sidebar-menu');
+  if (nav.getAttribute('aria-hidden') === 'false') {
+    nav.setAttribute('aria-hidden', true);
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute(
+      'aria-label', 
+      'Open sidebar navigation menu'
+    );
+  } else {
+    nav.setAttribute('aria-hidden', false);
+    button.setAttribute('aria-expanded', 'true');
+    button.setAttribute(
+      'aria-label', 
+      'Close sidebar navigation menu'
+    );
+  }
+});
+    </script>
+</head>
+<body>
+    <button aria-expanded="false" aria-controls="sidebar-menu" aria-label="Open sidebar navigation menu">
+        Toggle Menu
+      </button>
+      <nav id="sidebar-menu" aria-label="Sidebar menu" aria-hidden="true">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Upcoming</a>
+      </nav>
+</body>
+</html>
