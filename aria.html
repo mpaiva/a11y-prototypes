@@ -1,0 +1,1255 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:inherit;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>What is ARIA?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>ARIA is shorthand for Accessible
+Rich Internet Applications. ARIA is a set of attributes you can add to HTML
+elements that define ways to make web content and applications accessible to
+users with disabilities who use assistive technologies (AT). When accessibility
+issues cannot be managed with native HTML, ARIA can help bridge those gaps.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>Where does ARIA come from?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>The formal name for ARIA is “Web
+Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA).”
+WAI-ARIA is a technical specification published by the World Wide Web
+Consortium (W3C), who are an international community that develops web
+standards. It initially had a working draft on September 15, 2008, and became a
+completed W3C Recommendation on March 20, 2014. When W3C published it as a
+recommendation,&nbsp;<a href="https://www.w3.org/WAI/standards-guidelines/aria/"><span
+style='color:#177AB6'>WAI-ARIA then became a set of web standards</span></a>.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>Who is ARIA for?</span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Support for ARIA</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>At this time, ARIA is not supported
+by all technologies. However, support for ARIA is most definitely growing.
+Those who do support ARIA include browsers, AT (i.e. screen readers,
+magnifiers, text-to-speech, etc.), applications, and JavaScript toolkits. It’s
+a very complex set of standards, so complete support is difficult to achieve.
+Even so, almost all current versions of the technologies mentioned do support
+at least some of ARIA.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>ARIA and HTML5</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Due to HTML5 not having 100% support
+with all browsers and screen readers, it’s very important to check the support
+status of the HTML5 elements you’re using:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>Check which
+browsers and devices your site will support.</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>Check those
+against one or more of these resources:</span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://a11ysupport.io/"><span style='color:#177AB6'>Accessibility
+Support</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://caniuse.com/#search=aria"><span style='color:#177AB6'>Can I Use:
+ARIA (specifically look under WAI-ARIA Accessibility features)</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.html5accessibility.com/"><span style='color:#177AB6'>HTML5
+Accessibility</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.scottohara.me/blog/2019/04/05/landmarks-exposed.html"><span
+style='color:#177AB6'>HTML5 Landmarks Exposed</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://freedomscientific.github.io/VFO-standards-support/aria.html"><span
+style='color:#177AB6'>JAWS ARIA Role Support</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Web_applications_and_ARIA_FAQ#Where_is_ARIA_Supported"><span
+style='color:#177AB6'>MDN web docs: Where is ARIA supported?</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:1.0in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;font-family:"Courier New";color:#0B1B23'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.powermapper.com/tests/screen-readers/elements/"><span
+style='color:#177AB6'>PowerMapper HTML elements Screen reader compatibility</span></a></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>In cases
+where HTML5 elements don’t have accessibility support, add both the HTML5
+element and the ARIA role in order to cover those gaps in support.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>How people with disabilities use the web</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>W3C WAI has created a wonderful
+resource within the&nbsp;<a href="https://www.w3.org/WAI/people-use-web/"><span
+style='color:#177AB6'>Accessibility Fundamentals: How People with Disabilities
+Use the Web</span></a>&nbsp;section of their site titled&nbsp;<a
+href="https://www.w3.org/WAI/people-use-web/tools-techniques/"><span
+style='color:#177AB6'>Tools and Techniques</span></a>. According to W3C WAI, it&nbsp;<i>“</i>introduces
+some of the techniques and tools that people with disabilities use to interact
+with the web — web browser settings, text-to-speech, voice recognition, and
+many more.&nbsp;<i>”</i>&nbsp;We highly recommend checking this page out to get
+a deeper understanding of AT.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>What can ARIA do?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>There are three main components used
+in ARIA: Roles, States, and Properties.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Roles</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Roles are used to define a type of
+user interface (UI) element (i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>role=“ROLE_NAME”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>). Once a
+role is set for an element, it does not change.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>ABSTRACT ROLES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: While acting as
+the foundation for all other roles, abstract roles are utilized by browsers and
+should not be used in code. Instead, they are used to give roles their meaning
+in context and help with the addition of new roles.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the AT user?
+Abstract roles are in the background and shouldn’t be adjusted.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>DOCUMENT
+STRUCTURE ROLES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: Document
+structure roles aren’t normally interactive, but instead provide descriptions
+for sections within a page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples
+include&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>img</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>document</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>heading</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>list</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>listitem</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>, and&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>toolbar</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>role=“toolbar”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>). You can
+see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/roles#document_structure_roles"><span
+style='color:#177AB6'>W3C’s ARIA 5.3.3 Document Structure Roles</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user?
+Users of AT use document structure roles to identify content while navigating
+through a page, which helps give them the context of the content they’re taking
+in. While HTML 5 may provide much of this context on its own, screen reader
+support for HTML 5 is sometimes missing. For this reason, the most robust
+choice is to use both.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>LANDMARK ROLES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: Created for
+easier navigation, landmark roles identify each section of content within a
+page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples
+include&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>banner</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>contentinfo</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>form</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>main</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>navigation</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>search</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>role=“search”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>). You can
+see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/roles#landmark_roles"><span
+style='color:#177AB6'>W3C’s ARIA 5.3.4 Landmark Roles</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user?
+Users of AT use landmark roles to navigate through a page. For instance, a
+screen reader will announce the start and end of each landmark role set on a
+page, and its web rotor will display a list of these roles/regions.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>WIDGET ROLES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: Used when HTML
+doesn’t define elements, widget roles add semantic meaning to elements and user
+interfaces (UIs), small and large. According to&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/roles#widget_roles"><span
+style='color:#177AB6'>W3C’s ARIA 5.3.2 Widget Roles</span></a>, standalone UI
+widgets are part of larger, composite widgets, while composite UI widgets act
+as containers that manage other contained widgets.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples of
+standalone UI widgets include&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>alert</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>button</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>checkbox</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>link</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>menuitem</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>tab</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>, and&nbsp;</span><span style='font-size:15.0pt;font-family:
+"Courier New";color:#657486;background:#F9F9F9'>tabpanel</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>role=“tabpanel”</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>). Commonly used examples of composite UI widgets include&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>combobox</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>grid</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>listbox</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>menu</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>radiogroup</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>, and&nbsp;</span><span style='font-size:15.0pt;font-family:
+"Courier New";color:#657486;background:#F9F9F9'>tablist</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>role=“tablist”</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>). You can see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/roles#widget_roles"><span
+style='color:#177AB6'>W3C’s ARIA 5.3.2 Widget Roles</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user?
+Users of AT use widget roles to interact with the page to get things done. This
+can include completing forms, opening and closing tabs and panels, and navigating
+a main or sidebar menu.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>States and Properties</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>States and properties can be applied
+to elements and are used together to support ARIA roles existing on a page.
+States can change on their own or with user interaction (i.e.&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-checked</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;and&nbsp;</span><span style='font-size:15.0pt;font-family:
+"Courier New";color:#657486;background:#F9F9F9'>aria-disabled</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>), usually
+with JavaScript. Properties rarely change once they’re set (i.e.&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-labelledby</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;and&nbsp;</span><span style='font-size:15.0pt;font-family:
+"Courier New";color:#657486;background:#F9F9F9'>aria-describedby</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>).</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples include&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-describedby</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-haspopup</span><span style='font-size:
+15.0pt;font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-hidden</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-label</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>, and&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-labelledby</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>aria-labelledby=“uid-123”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>). You can
+see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#global_states"><span
+style='color:#177AB6'>W3C’s ARIA Global States and Properties</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>In addition, there are also four
+categories of states and properties:</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>Drag-and-Drop
+Attributes</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>Live Region
+Attributes</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>Relationship
+Attributes</span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>Widget
+Attributes</span></p>
+
+<p class=MsoNormal style='background:white'><i><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Note: Widget Attributes are not to
+be confused with Widget Roles.</span></i></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>DRAG-AND-DROP
+ATTRIBUTES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: Conveys
+information to AT about drag-and-drop elements, including draggable elements
+and their drop targets.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples
+include&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-dropeffect</span><span style='font-size:
+15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;and&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-grabbed</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>aria-grabbed=“true”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>). You can
+see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#attrs_dragdrop"><span
+style='color:#177AB6'>W3C’s ARIA Drag-and-Drop Attributes</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user?
+Users of AT use drag-and-drop attributes to interact with drag-and-drop
+components using various methods regardless of their disability.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>LIVE REGION
+ATTRIBUTES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: Indicates changes
+in content for a user’s AT, such as setting whether a message will be read
+aloud with the flow of content (i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>aria-live=“polite”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>) or instead
+will interrupt the flow of content and be read aloud immediately (</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-live=“assertive”</span><span style='font-size:15.0pt;font-family:
+"Georgia",serif;color:#0B1B23'>). These elements don’t need to have focus, and
+can include information on how the user can proceed.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples
+include&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-atomic</span><span style='font-size:
+15.0pt;font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-busy</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>, and&nbsp;</span><span style='font-size:15.0pt;font-family:
+"Courier New";color:#657486;background:#F9F9F9'>aria-live</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-live=“polite”</span><span style='font-size:15.0pt;font-family:
+"Georgia",serif;color:#0B1B23'>). You can see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#attrs_liveregions"><span
+style='color:#177AB6'>W3C’s ARIA Live Region Attributes</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user? AT
+use live region attributes to inform users what’s happening on a page with
+regular messages as things change on the page. Live region attributes are also
+used to provide notifications to users after forms have been submitted.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>RELATIONSHIP
+ATTRIBUTES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: These attributes
+add relationships between elements that can’t be determined otherwise.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples
+include&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-describedby</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;and&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-labelledby</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>aria-labelledby=“uid-123”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>). You can
+see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#attrs_relationships"><span
+style='color:#177AB6'>W3C’s ARIA Relationship Attributes</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user?
+Users of AT use relationship attributes to understand when information is
+related when navigating the page and gathering additional data from various
+elements like forms, menus, and tabs/panels.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>WIDGET ATTRIBUTES</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Brief Description: Used for commonUI
+elements that receive input from users while processing those actions and
+information.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Commonly used examples: Examples
+include&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-autocomplete</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-checked</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>,&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-disabled</span><span style='font-size:
+15.0pt;font-family:"Georgia",serif;color:#0B1B23'>,&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-label</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>, and&nbsp;</span><span style='font-size:15.0pt;font-family:
+"Courier New";color:#657486;background:#F9F9F9'>aria-required</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;(i.e.&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-required=“true”</span><span style='font-size:15.0pt;font-family:
+"Georgia",serif;color:#0B1B23'>). You can see a full list on the&nbsp;<a
+href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#attrs_widgets"><span
+style='color:#177AB6'>W3C’s ARIA Widget Attributes</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>How does it get used by the user?
+Users of AT use widget attributes to more easily utilize interactive UI
+elements, like forms and overlays/modals/popups. This helps to avoid confusion
+during the input process.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>When shouldn’t I use ARIA?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>It’s funny you ask. W3C actually
+created the&nbsp;<a href="https://www.w3.org/TR/using-aria/#NOTES"><span
+style='color:#177AB6'>Rules of ARIA Use</span></a>&nbsp;to help to guide us in
+this question. There are five of them, starting with:</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>First Rule of ARIA Use</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>The first and most important rule of
+ARIA is to use native HTML at all times, unless it’s absolutely, positively
+impossible to make an element accessible otherwise. When in doubt, choose
+native HTML. Some examples of when this may not be possible include:</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>When the HTML5
+     element doesn’t have accessibility support. That status should always be
+     checked on the&nbsp;<a href="https://www.html5accessibility.com/"><span
+     style='color:#177AB6'>HTML5 Accessibility</span></a>&nbsp;site.</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>If the design doesn’t
+     allow for a specific native element because of limitations on styling.</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>When the wanted
+     feature isn’t available in HTML.</span></li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='color:#0B1B23;background:white'><span
+      style='font-size:15.0pt;font-family:"Georgia",serif'>That status should
+      always be checked on the Paciello Group’s&nbsp;<a
+      href="https://developer.paciellogroup.com/blog/2014/10/aria-in-html-there-goes-the-neighborhood/#html5na"><span
+      style='color:#177AB6'>ARIA roles and properties not available in HTML5</span></a>&nbsp;page.</span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Second Rule of ARIA Use</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>The second rule of ARIA is do not
+change native HTML semantics unless you absolutely have to. In almost all
+cases, native HTML will work just fine. This is because ARIA does not get added
+to the document object model (DOM), so any objects created in the browser will
+not automatically become what they are trying to emulate. For example, a
+button:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Instead of this:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;span
+role=“button” onClick=“submitForm();”&gt;Submit&lt;/span&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Do this:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;button
+type=“submit” onClick=“submitForm();”&gt;Submit&lt;/button&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Third Rule of ARIA Use</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>All interactive ARIA controls must
+be keyboard accessible. For elements that don’t normally receive keyboard
+focus, add&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>tabindex=“0”</span><span style='font-size:
+15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;to the element to add
+it to the logical tab order. Here’s an example:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;div
+tabindex=“0”&gt;Lullabot is awesome!&lt;/div&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Fourth Rule of ARIA Use</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>For all elements that are focusable,
+do not ever add&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>role=“presentation”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;or&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-hidden=“true”</span><span style='font-size:15.0pt;font-family:
+"Georgia",serif;color:#0B1B23'>. This is because for some users, this will
+result in them focusing on nothing, causing confusion. Elements that are
+automatically focusable include links and form elements. Any element that
+has&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>tabindex=“0”</span><span style='font-size:
+15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;added to it is also
+included in that list.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Fifth Rule of ARIA Use</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>You must give all interactive
+elements an accessible name. This only happens when the interactive element
+(&lt;input&gt;) accessible name property has a value (</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>aria-label=“Search”</span><span style='font-size:15.0pt;font-family:
+"Georgia",serif;color:#0B1B23'>&nbsp;or&nbsp;</span><span style='font-size:
+15.0pt;font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;label&gt;</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>).</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Instead of this:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>Search: &lt;input
+type=“text” id=“search” /&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Do this:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;label
+for=“search”&gt;Search&lt;/label&gt;: &lt;input type=“text” id=“search” /&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Or</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;input
+type=“text” id=“search” aria-label=“Search” /&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>When should I use ARIA?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Some of the most common uses for
+ARIA include:</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Descriptive labels</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>When you need to add more
+descriptive labels to HTML elements like buttons or links (i.e. Read More,
+Learn More, etc.), you can use the ARIA&nbsp;</span><span style='font-size:
+15.0pt;font-family:"Courier New";color:#657486;background:#F9F9F9'>aria-label</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>&nbsp;to
+accomplish this:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Before</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;a
+href=“/path/to/your/page”&gt;Read More&lt;/a&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>After</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;a
+aria-label=“Read More about how awesome Lullabot is”
+href=“/path/to/your/page”&gt;Read More&lt;/a&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Alerts</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>In order for events to get announced
+to screen readers, you must add ARIA live regions and alert messages to those
+elements for them to be detected and read aloud.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Before</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;div
+class=“alert-message”&gt;You’ve successfully completed the contact form and you
+will soon receive a confirmation email.&lt;/div&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>After</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;div
+class=“alert-message” role=“alert”&gt;You’ve successfully completed the contact
+form and you will soon receive a confirmation email.&lt;/div&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Relationships</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>To create a relationship between
+elements (parent/child), you’ll need to add ARIA attributes to each of the
+elements. Here’s an example:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;nav id=“main-nav”&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;button id=“menu-button-1”
+aria-haspopup=“true” aria-controls=“menu-list-1”&gt;Menu List 1&lt;/button&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;ul id=“menu-list-1” role=“menu”
+aria-labelledby=“menu-button-1”&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;li role=“none”&gt;&lt;a role=“menuitem”
+href=“...”&gt;Link 1&lt;/a&gt;&lt;/li&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;li role=“none”&gt;&lt;a role=“menuitem”
+href=“...”&gt;Link 2&lt;/a&gt;&lt;/li&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;li role=“none”&gt;&lt;a role=“menuitem”
+href=“...”&gt;Link 3&lt;/a&gt;&lt;/li&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;/ul&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+font-family:Consolas;color:#21323F'>&lt;/nav&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Forms</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>To make forms accessible for users
+of screen readers, add ARIA attributes to form elements so that they become
+easier to interact with.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;label
+for=“first-name”&gt;First Name&lt;/label&gt;&lt;input type=“text”
+id=“first-name” aria-required=“true” aria-autocomplete=“on” /&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>How does Drupal use ARIA?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Thanks to the&nbsp;<a
+href="https://www.drupal.org/about/features/accessibility"><span
+style='color:#177AB6'>Accessibility Initiative</span></a>&nbsp;that started in
+Drupal 7, there have been many advancements in both core and contributed
+modules to deliver accessibility to all users. Some of those achievements
+include:</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Core</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>When Drupal 8 was created,
+accessibility was a top priority for the Drupal community. Because of this,
+there are several great built-in accessibility features.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>AURAL ALERTS</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Consistent aural alerts are now
+provided via Drupal’s Drupal.announce() JavaScript method, allowing users with
+visual disabilities to hear alerts using their AT. The two allowable values for
+the&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>aria-live</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>&nbsp;attribute used for the alerts
+are&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>polite</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>&nbsp;(will not interrupt the
+browser) and&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>assertive</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>&nbsp;(will generally interrupt any
+current speech).</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>AUTOCOMPLETE</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Drupal uses the jQueryUI for its
+autocomplete feature, which gives users the option to autocomplete form fields
+with their previously-entered data once they’ve started typing in a field.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>FORM FIELDSETS</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Within the Form API, fieldsets are
+used to organize related sections in a form into their own sub-sections. Groups
+of&nbsp;</span><span style='font-size:15.0pt;font-family:"Courier New";
+color:#657486;background:#F9F9F9'>checkboxes</span><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>&nbsp;and&nbsp;</span><span
+style='font-size:15.0pt;font-family:"Courier New";color:#657486;background:
+#F9F9F9'>radiobuttons</span><span style='font-size:15.0pt;font-family:"Georgia",serif;
+color:#0B1B23'>&nbsp;are automatically grouped within fieldsets, and other
+elements can be grouped within a fieldset as well.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>INLINE FORM
+ERRORS</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>When users fill out forms, inline
+form errors have been added next to each form field making it easier for all
+users to complete forms. This addition especially helps users of AT drill-down
+on what items they need to correct to complete the form.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>SEMANTIC CODE</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Drupal uses HTML5 elements and ARIA
+to deliver more semantic meaning to its content. This allows users of AT the
+capability to use their own browser customizations to navigate the web without
+being forced to use what’s been set for a specific site.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>TAB ORDER FOR
+KEYBOARD ACCESSIBILITY</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>For users who choose or must use a
+keyboard to navigate the web, tab order of a web page is a top priority.
+Drupal’s Tabbing Manager provides a solution to this by allowing a developer a
+way to add or remove tab constraints from a page using controlled tab order,
+like a modal/overlay/popup window for example. Drupal has also set up key
+elements in Twig templates that must automatically receive keyboard focus, like
+the “Skip to main content” link, for example.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'>VIEWS</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Views can be used to add several
+ARIA attributes. A good example would be when you need to add a more
+descriptive label to an HTML element. Once you’ve opened a view, you can select
+a field, open the “Rewrite” section, and add a bit of custom code combined with
+tokens to create a descriptive label like this:</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;a
+aria-label=“Read More about {{ title }}” href=“{{ link }}”&gt;{{ title
+}}&lt;/a&gt;</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Note: See a full writeup of Drupal’s
+commitment to Accessibility on its own&nbsp;<a
+href="https://www.drupal.org/about/features/accessibility"><span
+style='color:#177AB6'>About Drupal &gt; Accessibility</span></a>&nbsp;page.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Contributed</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>In addition to the built-in
+accessibility features, several contributed modules in Drupal offer additional
+accessibility features and functionality.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'><a
+href="https://www.drupal.org/project/block_aria_landmark_roles"><span
+style='color:#177AB6'>BLOCK ARIA LANDMARK ROLES</span></a></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>This module gives the site builder
+the capability to add landmark roles to any block on the site.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'><a
+href="https://www.drupal.org/project/ckeditor_abbreviation"><span
+style='color:#177AB6'>CKEDITOR ABBREVIATION</span></a></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>This module adds an abbreviation
+button to the toolbar of the Rich Text Editor (WYSIWYG). When users click this
+button, it creates an accessible abbreviation at the location of the user’s
+cursor.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'><a
+href="https://www.drupal.org/project/high_contrast"><span style='color:#177AB6'>HIGH
+CONTRAST</span></a></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>This module adds a toggle behavior
+to the user’s keyboard, allowing the user to toggle a high contrast view of the
+site. This is especially helpful for users with visual disabilities.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:15.0pt;
+font-family:Helvetica;color:#0B1B23;text-transform:uppercase'><a
+href="https://www.drupal.org/project/text_resize"><span style='color:#177AB6'>TEXT
+RESIZE</span></a></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>For users with low vision, this
+module adds a tool contained within a block that allows users the ability to
+resize the text to fit their needs. The tool includes two buttons: + (increase
+text size) and - (decrease text size).</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>...and look out for the future use
+of artificial intelligence within Drupal to aid in accessibility.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>Is there any confusion on how/if/when to
+use ARIA in the developer community?</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Yes! There’s some confusion and even
+controversy around the use of ARIA for several reasons. Several of them
+include:</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Adding&nbsp;</span></b><b><span
+style='font-size:10.0pt;font-family:"inherit",serif;color:#657486;background:
+#F9F9F9'>role=“button”</span></b><b><span style='font-size:13.5pt;font-family:
+Helvetica;color:#0B1B23'>&nbsp;to a link, expecting it to work as a button</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>This issue comes down to how AT uses
+a button versus how they use a link. A link can be activated by an AT user by
+pressing Enter/Return, while a button can be activated when they press the
+Spacebar. If you add a link with&nbsp;</span><span style='font-size:15.0pt;
+font-family:"Courier New";color:#657486;background:#F9F9F9'>role=“button”</span><span
+style='font-size:15.0pt;font-family:"Georgia",serif;color:#0B1B23'>, the AT is
+going to detect it as a button. However, the user can become confused when they
+try to press the Spacebar with no result. This is why it’s best to keep links
+as links, and buttons as buttons.</span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>Keep in mind that which element you
+use is a structural decision, not a decorative one. You should use a button
+instead of a link when:</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>The link is empty or
+     has no href attribute:&nbsp;</span><span style='font-size:15.0pt;
+     font-family:"Courier New";color:#657486;background:#F9F9F9'>&lt;a
+     id=“123”&gt;Link&lt;a&gt;</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>The link has
+     scripting attached using an onclick attribute:&nbsp;</span><span
+     style='font-size:15.0pt;font-family:"Courier New";color:#657486;
+     background:#F9F9F9'>&lt;a onclick=“doThis();&gt;Link&lt;a&gt;</span><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>&nbsp;or similar
+     event listeners</span></li>
+</ul>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Adding redundant ARIA landmark roles to
+HTML5 elements</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>I’ve seen several sites where with
+good intentions, they’ve added ARIA attributes to HTML5 elements. The issue is
+that those HTML elements already have the landmark role built into them, so
+adding them becomes redundant. Here’s a list of HTML5 elements and their paired
+HTML4 landmark roles.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=1 cellpadding=0 width=500
+ style='width:375.0pt;background:white'>
+ <tr>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><b><span style='font-size:15.0pt;font-family:"Georgia",serif;
+  color:#0B1B23'>HTML4 Landmark Role</span></b></p>
+  </td>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><b><span style='font-size:15.0pt;font-family:"Georgia",serif;
+  color:#0B1B23'>HTML5 Element</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=250 style='width:187.5pt;border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”banner”</span></p>
+  </td>
+  <td width=250 style='width:187.5pt;border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;header&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”complementary”</span></p>
+  </td>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;aside&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”contentinfo”</span></p>
+  </td>
+  <td style='border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;footer&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”form”</span></p>
+  </td>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;form&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”main”</span></p>
+  </td>
+  <td style='border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;main&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”navigation”</span></p>
+  </td>
+  <td style='border:none;background:#EDEFF0;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;nav&gt;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>role=”region”</span></p>
+  </td>
+  <td style='border:none;padding:1.0pt 1.0pt 1.0pt 1.0pt'>
+  <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Arial",sans-serif;
+  color:black'>&lt;section&gt;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Using aria-controls attribute, which isn’t
+widely supported</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>There’s a lot of confusion in the
+accessibility world as to which screen readers support aria-controls. A couple
+of great articles on the subject can be found at “<a
+href="http://www.heydonworks.com/article/aria-controls-is-poop"><span
+style='color:#177AB6'>Aria-controls is Poop</span></a>” by Heydon Pickering
+aka&nbsp;<a href="http://twitter.com/heydonworks"><span style='color:#177AB6'>@heydonworks</span></a>,
+and “<a href="https://tink.uk/using-the-aria-controls-attribute/"><span
+style='color:#177AB6'>Using the aria-controls attribute</span></a>” by Leonie
+Watson aka&nbsp;<a href="https://twitter.com/leoniewatson"><span
+style='color:#177AB6'>@LeonieWatson</span></a>. After a lot of research, I
+became even more confused on the subject myself, so I then&nbsp;<a
+href="https://twitter.com/katannshaw/status/1178717885104918536?s=20"><span
+style='color:#177AB6'>sent out a tweet to the top search engine companies</span></a>&nbsp;as
+well as the authors of the two blogs mentioned to see if I could get more
+clarification. You can check back on my Twitter post to see its progress, in
+addition to visiting any one of these Twitter accounts of the main screen
+reader companies:</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>Freedom Scientific
+     (JAWS):&nbsp;<a href="https://twitter.com/FreedomSci"><span
+     style='color:#177AB6'>https://twitter.com/FreedomSci</span></a>&nbsp;</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>Apple Support
+     (VoiceOver):&nbsp;<a href="https://twitter.com/AppleSupport"><span
+     style='color:#177AB6'>https://twitter.com/AppleSupport</span></a>&nbsp;</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>NV Access
+     (NVDA):&nbsp;<a href="https://twitter.com/NVAccess"><span
+     style='color:#177AB6'>https://twitter.com/NVAccess</span></a>&nbsp;</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>Microsoft
+     Accessibility (Narrator):&nbsp;<a href="https://twitter.com/MSFTEnable"><span
+     style='color:#177AB6'>https://twitter.com/MSFTEnable</span></a>&nbsp;</span></li>
+ <li class=MsoNormal style='color:#0B1B23;background:white'><span
+     style='font-size:15.0pt;font-family:"Georgia",serif'>GNOME (Orca):&nbsp;<a
+     href="https://twitter.com/gnome"><span style='color:#177AB6'>https://twitter.com/gnome</span></a>&nbsp;</span></li>
+</ul>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>Some say “never use ARIA!”</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>It’s understandable that some feel
+this way, mostly because of the overuse of ARIA. However, according to the
+Paciello Group’s own&nbsp;<a
+href="https://developer.paciellogroup.com/blog/2014/10/aria-in-html-there-goes-the-neighborhood/#html5na"><span
+style='color:#177AB6'>ARIA roles and properties not available in HTML5</span></a>,
+there are several ARIA roles and properties that are not available in HTML5,
+but are needed to make the web easier to navigate and use for users of AT. It’s
+all about sticking with native controls whenever possible, and using ARIA as a
+last resort when an element cannot be made accessible otherwise. It’s a
+balancing act.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:13.5pt;
+font-family:Helvetica;color:#0B1B23'>General confusion on using HTML5 +
+WAI-ARIA</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'>This is one of the biggest areas of
+confusion for developers, and it relates to the First Rule of ARIA Use: “use
+native HTML at all times unless it’s absolutely, positively impossible to make
+an element accessible otherwise.” An example would be HTML5 required vs.
+WAI-ARIA aria-required. Luckily, there is now a&nbsp;<a
+href="https://www.w3.org/WAI/PF/html-task-force"><span style='color:#177AB6'>W3C
+HTML Accessibility Task Force</span></a>&nbsp;that is addressing these issues
+as we speak.</span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:18.0pt;
+font-family:Helvetica;color:#0B1B23'>ARIA resources</span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="http://www.heydonworks.com/article/aria-controls-is-poop"><span
+style='color:#177AB6'>@heydonworks: Aria-controls is Poop</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://tink.uk/using-the-aria-controls-attribute/"><span
+style='color:#177AB6'>@LeonieWatson: Using the aria-controls attribute</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.drupal.org/about/features/accessibility"><span
+style='color:#177AB6'>Drupal: Accessibility</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://freedomscientific.github.io/VFO-standards-support/aria.html"><span
+style='color:#177AB6'>Freedom Scientific: JAWS ARIA Role Support</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://github.com/nvaccess/nvda/issues/8983"><span style='color:#177AB6'>Github
+repo nvacess/nvda: Issue &gt; Support for aria-controls</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://developers.google.com/web/fundamentals/accessibility/semantics-aria/"><span
+style='color:#177AB6'>Google Developers: Introduction to ARIA</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"><span
+style='color:#177AB6'>MDN web docs: ARIA Accessibility</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques"><span
+style='color:#177AB6'>MDN web docs: ARIA Techniques</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.w3.org/TR/html-aria/"><span style='color:#177AB6'>W3C: ARIA
+in HTML</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.w3.org/WAI/PF/aria-1.1/roles"><span style='color:#177AB6'>W3C:
+ARIA The Roles Model</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties"><span
+style='color:#177AB6'>W3C: ARIA Supported States and Properties</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.w3.org/WAI/PF/html-task-force"><span style='color:#177AB6'>W3C:
+HTML Accessibility Task Force</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://www.w3.org/WAI/people-use-web/tools-techniques/"><span
+style='color:#177AB6'>W3C WAI: How People with Disabilities Use the Web &gt;
+Tools and Techniques</span></a></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:15.0pt;
+font-family:"Georgia",serif;color:#0B1B23'><a
+href="https://en.wikipedia.org/wiki/Assistive_technology"><span
+style='color:#177AB6'>Wikipedia: Assistive technology</span></a></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
